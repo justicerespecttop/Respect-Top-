@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>التقديم | وزارة العدل</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+
+        .application {
+            max-width: 850px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .application-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .application-header h1 {
+            color: #e4a03b;
+            font-size: 40px;
+        }
+
+        .application-header p {
+            color: #958b80;
+            margin-top: 10px;
+        }
+
+        .form-box {
+            background: #120e0a;
+            border: 1px solid #302316;
+            border-radius: 15px;
+            padding: 35px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #d8cbbd;
+            font-weight: 700;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px;
+
+            background: #0b0907;
+
+            border: 1px solid #3a2a1a;
+
+            border-radius: 8px;
+
+            color: white;
+
+            font-family: inherit;
+
+            outline: none;
+        }
+
+        .form-group textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #d9912c;
+        }
+
+        .submit-btn {
+            width: 100%;
+
+            padding: 15px;
+
+            background: #d9912c;
+
+            border: none;
+
+            border-radius: 8px;
+
+            font-family: inherit;
+
+            font-weight: 800;
+
+            cursor: pointer;
+
+            transition: .3s;
+        }
+
+        .submit-btn:hover {
+            background: #e7a03b;
+            transform: translateY(-2px);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-logo">
+
+        <img src="../assets/logo.png">
+
+        <div>
+            <strong>وزارة العدل</strong>
+            <small>ريسبكت توب</small>
+        </div>
+
+    </div>
+
+    <nav>
+
+        <a href="../index.html">
+            الرئيسية
+        </a>
+
+        <a href="apply.html" class="active">
+            التقديم
+        </a>
+
+        <a href="constitution.html">
+            دستور الدولة
+        </a>
+
+    </nav>
+
+    <a href="#" class="discord-login" onclick="discordLogin()">
+        تسجيل الدخول
+    </a>
+
+</header>
+
+
+<main class="application">
+
+    <div class="application-header">
+
+        <h1>
+            التقديم على وزارة العدل
+        </h1>
+
+        <p>
+            يرجى تعبئة جميع المعلومات بدقة وصدق
+        </p>
+
+    </div>
+
+
+    <form class="form-box">
+
+        <div class="form-group">
+
+            <label>
+                1 - اسمك
+            </label>
+
+            <input
+                type="text"
+                placeholder="اكتب اسمك هنا"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                2 - عمرك
+            </label>
+
+            <input
+                type="number"
+                placeholder="اكتب عمرك"
+                min="1"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                3 - ساعات تواجدك اليومية
+            </label>
+
+            <input
+                type="number"
+                placeholder="مثال: 5 ساعات"
+                min="0"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                4 - ماذا تعرف عن القضاء؟
+            </label>
+
+            <textarea
+                placeholder="اكتب إجابتك بالتفصيل..."
+                required
+            ></textarea>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                5 - هل كنت في وزارة العدل سابقاً؟
+            </label>
+
+            <select required>
+
+                <option value="">
+                    اختر الإجابة
+                </option>
+
+                <option value="yes">
+                    نعم
+                </option>
+
+                <option value="no">
+                    لا
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                إذا كانت الإجابة نعم، ماهي خبراتك السابقة؟
+            </label>
+
+            <textarea
+                placeholder="اذكر خبراتك السابقة..."
+            ></textarea>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                6 - كيف ستتعامل مع الضغط؟
+            </label>
+
+            <textarea
+                placeholder="اكتب إجابتك..."
+                required
+            ></textarea>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="submit-btn"
+        >
+            إرسال طلب التقديم
+        </button>
+
+    </form>
+
+</main>
+
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
